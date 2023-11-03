@@ -1,5 +1,5 @@
 // Import theming functions
-@import '../../styles.scss';
+@import '/my-theme.scss';
 @import '@angular/material/theming';
 
 $primary: map-get($my-theme, primary);
