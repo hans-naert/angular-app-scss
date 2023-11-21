@@ -1,10 +1,8 @@
 // Import theming functions
-@import '/my-theme.scss';
-@import '@angular/material/theming';
-
-$primary: map-get($my-theme, primary);
+@use '@angular/material' as mat;
+@use '/my-theme.scss' as *;
 
 h3 {
   // Get the default hue for a palette.
-  color: mat-color($primary);
+  color: mat.get-theme-color($my-theme, primary, default);
 }
